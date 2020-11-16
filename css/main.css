@@ -94,6 +94,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  outline: 2px solid red;
 }
 
 body {
@@ -323,9 +324,14 @@ img {
 
 .team-list {
   margin-top: 0;
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
 }
 
 .team-list .item {
@@ -334,12 +340,24 @@ img {
 
 .team-list-item {
   background-color: #ffffff;
-  /* margin-right: 30px; */
-  width: calc(100% / 4 - 30px);
   margin-left: 30px;
   text-align: center;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-list-item {
+    width: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list-item {
+    width: calc(100% / 4 - 30px);
+    margin-left: 30px;
+  }
 }
 
 .team {
@@ -414,22 +432,30 @@ img {
   margin: 0;
 }
 
-.feature-list {
-  display: flex;
-}
-
-.feature-list .item .title {
-  margin-bottom: 10px;
-  margin-top: 0;
+@media screen and (min-width: 768px) {
+  .feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
 }
 
 .feature-list .item {
-  width: 270px;
   border-radius: 4px;
 }
 
-.feature-list .item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .feature-list .item {
+    width: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .feature-list .item {
+    width: calc(100% / 4 - 30px);
+    margin-left: 30px;
+  }
 }
 
 .feature-list .item::before {
@@ -456,6 +482,11 @@ img {
 
 .feature-list .cosmo::before {
   background-image: url(../img/utp/astronaut.svg);
+}
+
+.feature-list .item .title {
+  margin-bottom: 10px;
+  margin-top: 0;
 }
 
 .footer {
@@ -739,20 +770,46 @@ img {
   padding-bottom: 94px;
 }
 
-.client-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin-left: -30px;
+@media screen and (min-width: 480px) {
+  .client-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .client-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
 }
 
 .client-list .item {
-  width: calc(100% / 6 - 30px);
-  margin-left: 30px;
   border-radius: 5px;
   border: 1px solid #afb1b8;
   transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 480px) {
+  .client-list .item {
+    width: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .client-list .item {
+    width: calc(100% / 3 - 30px);
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .client-list .item {
+    width: calc(100% / 6 - 30px);
+  }
 }
 
 .client-list .btn {
@@ -916,7 +973,7 @@ img {
 }
 
 .team-list .socials-list {
-  display: flex;
+  display: inline-flex;
 }
 
 .social-icons-svg-footer {
@@ -952,9 +1009,27 @@ img {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  width: 100%;
   padding-right: 15px;
   padding-left: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .section {
