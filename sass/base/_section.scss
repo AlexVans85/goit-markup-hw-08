@@ -1,0 +1,40 @@
+.container-flex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.container-flex .logo {
+  display: flex;
+  align-items: center;
+}
+
+/* section */
+.section-title {
+  color: $title-text-color;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.67;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.page-header {
+  border-bottom: 1px solid #ececec;
+}

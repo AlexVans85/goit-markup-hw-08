@@ -1,0 +1,144 @@
+.footer {
+  background-color: $triple-bg-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.studio.footer {
+  color: $primary-bg-color;
+}
+
+.container-footer .logo {
+  color: $primary-bg-color;
+}
+
+.container-footer .adres {
+  margin-bottom: 9px;
+  margin-top: 20px;
+}
+
+.footer-contacts .item {
+  margin-bottom: 9px;
+}
+
+.footer-contacts {
+  margin-top: 9px;
+}
+/* adres footer */
+.adres {
+  color: $primary-bg-color;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-style: normal;
+}
+/* contacts footer */
+
+.footer .contact-title {
+  color: $triple-texr-color;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  font-style: normal;
+  transition: all $time-animation cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.socials-list-footer {
+  display: flex;
+  /* outline: 2px solid yellow; */
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.socials-list-item-footer {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all $time-animation cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.container-footer {
+  display: flex;
+}
+
+.container-footer-adres {
+  width: calc((100% - 30px * 3) / 4);
+  margin-right: 30px;
+}
+.container-footer-socials {
+  width: calc((100% - 30px * 3) / 4);
+  margin-right: 30px;
+}
+
+.container-footer-form {
+  width: calc((100% - 30px) / 2);
+}
+
+.footer-input {
+  padding: 15px;
+  background: $triple-bg-color;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  align-items: center;
+  letter-spacing: 0.03em;
+  width: 358px;
+}
+
+.footer-form {
+  margin-right: 12px;
+}
+
+.footer-form-button {
+  display: inline-block;
+  border-radius: 3px;
+  padding: 10px 32px;
+
+  color: $primary-bg-color;
+  background-color: $accent-color;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  align-items: center;
+}
+
+.footer-form-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: $accent-color;
+  background-image: url(../img/logotg.svg);
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.section-title-footer {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $primary-bg-color;
+}

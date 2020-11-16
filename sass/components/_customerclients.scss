@@ -1,0 +1,43 @@
+.client-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: -30px;
+}
+
+.client-list .item {
+  width: calc(100% / 6 - 30px);
+  margin-left: 30px;
+  border-radius: 5px;
+  border: 1px solid #afb1b8;
+  transition: all $time-animation cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.client-list .btn {
+  display: flex;
+  height: 90px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: all $time-animation cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.client-list .item:hover {
+  border: 1px solid $accent-color;
+}
+
+.client-list .btn:focus {
+  border: 1px solid $accent-color;
+}
+
+.client-list .btn:focus {
+  border: 1px solid $accent-color;
+}
+
+.client-list .item:hover .logo-icons-svg {
+  fill: $accent-color;
+}
+.client-list .btn:focus .logo-icons-svg {
+  fill: $accent-color;
+}

@@ -1,0 +1,94 @@
+.social-icons-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  transition: all $time-animation cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.env-icons-svg {
+  width: 16px;
+  height: 12px;
+  fill: $primary-text-color;
+  vertical-align: middle;
+  transition: all $time-animation cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.phone-icons-svg {
+  width: 10px;
+  height: 16px;
+  fill: $primary-text-color;
+  vertical-align: middle;
+  transition: all $time-animation cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.socials-list {
+  padding-top: 16px;
+  padding-bottom: 30px;
+  padding-right: 32px;
+  padding-left: 32px;
+}
+
+.socials-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.icon-contacts-link:hover .env-icons-svg,
+.icon-contacts-link:focus .env-icons-svg {
+  fill: $accent-color;
+}
+
+.icon-contacts-link:hover .phone-icons-svg,
+.icon-contacts-link:focus .phone-icons-svg {
+  fill: $accent-color;
+}
+
+.social-icons-link:hover .social-icons-svg,
+.social-icons-link:focus .social-icons-svg {
+  fill: $accent-color;
+}
+
+.social-icons-svg {
+  fill: #afb1b8;
+  width: 20px;
+  height: 20px;
+  transition: all $time-animation cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo-icons-svg {
+  fill: #afb1b8;
+  transition: all $time-animation cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.client-list .item:hover .logo-icons-svg {
+  fill: $accent-color;
+}
+
+.social-icons-link:hover .social-icons-svg {
+  fill: $primary-bg-color;
+}
+
+.social-icons-link:focus .social-icons-svg {
+  fill: $primary-bg-color;
+}
+.social-icons-link:hover,
+.social-icons-link:focus {
+  background-color: $accent-color;
+}
+
+.socials-list-item-footer:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team-list .socials-list {
+  display: flex;
+}
+.social-icons-svg-footer {
+  fill: $primary-bg-color;
+  width: 20px;
+  height: 20px;
+  transition: all $time-animation cubic-bezier(0.4, 0, 0.2, 1);
+}

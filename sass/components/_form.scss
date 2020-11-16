@@ -1,0 +1,119 @@
+.contact-us {
+  padding-top: 40px;
+  padding-bottom: 50px;
+  padding-left: 40px;
+  padding-right: 40px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.contact-us-title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: $title-text-color;
+}
+
+.policy-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  margin-left: 10px;
+  letter-spacing: 0.03em;
+  color: $title-text-color;
+}
+
+.form-field {
+  text-align: left;
+  left: 0;
+}
+.qaz {
+  text-align: center;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.form-field-comm {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  resize: none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+  width: 100%;
+}
+
+.form-field input {
+  margin-top: 4px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 35px;
+}
+
+.form-field textarea {
+  margin-top: 4px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+}
+
+.form-field-name {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  position: relative;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
+  color: $primary-text-color;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.form-icons-svg {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+
+  top: 50%;
+  left: 20px;
+  transform: translateX(-50%);
+}
+
+.policy-link {
+  color: $accent-color;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.customer-checkbox {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  background-color: white;
+  border-radius: 2px;
+  border: 2px solid $title-text-color;
+  vertical-align: middle;
+}
+
+.checkbox:checked ~ .customer-checkbox {
+  background-color: $accent-color;
+  background-image: url(../img/galkanots.svg);
+  border-color: $accent-color;
+  vertical-align: middle;
+}
