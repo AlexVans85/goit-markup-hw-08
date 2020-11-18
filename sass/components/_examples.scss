@@ -15,6 +15,7 @@
 .exmpl-img {
   position: relative;
 }
+
 .exmpl-title {
   position: absolute;
   bottom: 0;
@@ -34,4 +35,24 @@
   margin-bottom: 0;
   justify-content: center;
   align-content: center;
+}
+
+.section-exmpl {
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+
+  outline: 3px solid brown;
+}
+
+.container-exmpls {
+  outline: 2px solid yellow;
 }

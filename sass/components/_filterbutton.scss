@@ -29,11 +29,32 @@
   margin-right: 8px;
 }
 
-.filter {
-  display: flex;
+.filter .item {
+  margin-bottom: 10px;
 }
 
+// .filter {
+//   display: flex;
+// }
+
 .filter {
-  justify-content: center;
-  padding-bottom: 56px;
+  // padding-bottom: 56px;
+
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 56px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 56px;
+    justify-content: center;
+  }
 }
