@@ -5,8 +5,23 @@
 
 .nav-contacts {
   display: flex;
+
+  @media screen and (max-width: 766px) {
+    display: none;
+  }
 }
 
+.contacts {
+  @media screen and (min-width: 767px) {
+    display: block;
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: inline-flex;
+    margin-left: auto;
+  }
+}
 .nav-contacts .item {
   margin-right: 50px;
 }
@@ -34,6 +49,20 @@
   border-radius: 2px;
 }
 
+.site-nav-mob .current::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 5px;
+  background-color: $accent-color;
+  position: absolute;
+
+  left: 50%;
+  transform: translateX(-50%);
+
+  border-radius: 2px;
+}
+
 .site-nav .link.current {
   color: $accent-color;
 }
@@ -44,10 +73,45 @@
 
 .site-nav {
   margin-left: 93px;
+  display: flex;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
-.site-nav {
-  display: flex;
+.site-nav-mob .item {
+  height: max-content;
+  padding-top: 60px;
+  padding-bottom: 32px;
+  position: relative;
+}
+
+.site-nav-mob {
+  padding: 20px;
+}
+.site-nav-mob .link {
+  color: $title-text-color;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.167;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: color $time-animation cubic-bezier(0.4, 0, 0.2, 1);
+  // position: relative;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  &.site-nav .link.current {
+    color: $accent-color;
+  }
 }
 
 .site-nav .link {
@@ -58,6 +122,9 @@
   letter-spacing: 0.02em;
   text-decoration: none;
   transition: color $time-animation cubic-bezier(0.4, 0, 0.2, 1);
+  // position: absolute;
+  // left: 50%;
+  // transform: translateY(50%);
 
   &:hover,
   &:focus {
@@ -82,4 +149,94 @@
   &:focus {
     color: $accent-color;
   }
+}
+
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: $primary-bg-color;
+  position: relative;
+  right: -140%;
+  margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  @media screen and (max-width: 480px) {
+    left: 100%;
+  }
+}
+.menu-button:hover,
+.menu-button:focus {
+  fill: $accent-color;
+}
+
+.menu-button .icon-closem {
+  display: none;
+}
+.menu-button.is-open .icon-closem {
+  display: block;
+}
+
+.menu-button.is-open .icon-burger {
+  display: none;
+}
+
+.container-flex {
+  position: relative;
+}
+
+.menu-container {
+  display: none;
+  background-color: $primary-bg-color;
+  text-align: center;
+  color: rgb(255, 217, 0);
+  padding: 20px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  // outline: 1px solid red;
+
+  &.is-open {
+    display: block;
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+}
+
+.mob-nav,
+.mob-contacts {
+  width: 100%;
+}
+// .mob-nav {
+//   outline: 1px solid green;
+// }
+
+// .mob-contacts {
+//   outline: 1px solid orange;
+// }
+
+.contacts-mob .link {
+  padding-top: 10px;
+  color: $primary-text-color;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: all $time-animation cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.contacts-mob .item {
+  padding-top: 16px;
 }
